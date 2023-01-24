@@ -8,24 +8,39 @@
         <title>Shelter</title>
     </head>
     <body>
-        <header class="header">
-            <div class="wrapper">
-                <a href="#" class="logo">Logo</a>
-                <nav class="header__navigation">
-                    <ul class="navigation">
-                        <li><a href="#"> About the shelter</a></li>
-                        <li><a href="#"> Our pets</a></li>
-                        <li><a href="#">Help the shelter</a></li>
-                        <li><a href="#">Contacts</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-        <main>
+        <div class="top-wrapper">
+            <header class="header">
+                <div class="wrapper header__wrapper">
+                    <a href="#" class="logo">
+                        <div class="header-logo">
+                            <h1>Cozy House</h1>
+                            <p class="logo-title">Shelter for pets in Boston</p>
+                        </div>
+                    </a>
+                    <nav class="header__navigation">
+                        <ul class="navigation">
+                            <li class="navigation__link">
+                                <a href="#"> About the shelter</a>
+                            </li>
+                            <li class="navigation__link">
+                                <a href="#">Our pets</a>
+                            </li>
+                            <li class="navigation__link">
+                                <a href="#">Help the shelter</a>
+                            </li>
+                            <li class="navigation__link">
+                                <a href="#">Contacts</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
             <section class="not-only">
-                <div class="wrapper">
+                <div class="wrapper not-only__wrapper">
                     <div class="not-only__content">
-                        <h2>Not only people need a house</h2>
+                        <h2 class="not-only__title">
+                            Not only people need a house
+                        </h2>
                         <p>
                             We offer to give a chance to a little and nice puppy
                             with an extremely wide and open heart. He or she
@@ -36,33 +51,39 @@
                             <button class="button">Make a friend</button>
                         </div>
                     </div>
+                    <img
+                        src="./assets/images/start-screen-puppy.png"
+                        class="not-only__img"
+                    />
                 </div>
-                <img src="./assets/images/start-screen-puppy.jpg" />
             </section>
+        </div>
+        <main>
             <section class="about">
-                <div class="wrapper">
-                    <div class="layout-2-column">
-                        <img src="./assets/images/about-pets.jpg" />
-                        <div class="about__content">
-                            <h3>About the shelter “Cozy House”</h3>
-                            <p>
-                                Currently we have 121 dogs and 342 cats on our
-                                hands and statistics show that only 20% of them
-                                will find a family. The others will continue to
-                                live with us and will be waiting for a lucky
-                                chance to become dearly loved.
-                            </p>
-                            <p>
-                                We feed our wards with the best food and make
-                                sure that they do not get sick, feel comfortable
-                                (including psychologically) and well. We are
-                                supported by 87 volunteers and 28 employees of
-                                various skill levels. About 12% of the animals
-                                are taken by the shelter staff. Taking care of
-                                the animals, they become attached to the pets
-                                and would hardly ever leave them alone.
-                            </p>
-                        </div>
+                <div class="wrapper about__wrapper">
+                    <img
+                        src="./assets/images/about-pets.jpg"
+                        class="about__img"
+                    />
+                    <div class="about__content">
+                        <h3>About the shelter “Cozy House”</h3>
+                        <p>
+                            Currently we have 121 dogs and 342 cats on our hands
+                            and statistics show that only 20% of them will find
+                            a family. The others will continue to live with us
+                            and will be waiting for a lucky chance to become
+                            dearly loved.
+                        </p>
+                        <p>
+                            We feed our wards with the best food and make sure
+                            that they do not get sick, feel comfortable
+                            (including psychologically) and well. We are
+                            supported by 87 volunteers and 28 employees of
+                            various skill levels. About 12% of the animals are
+                            taken by the shelter staff. Taking care of the
+                            animals, they become attached to the pets and would
+                            hardly ever leave them alone.
+                        </p>
                     </div>
                 </div>
             </section>
