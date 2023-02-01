@@ -20,10 +20,12 @@
                     <nav class="header__navigation">
                         <ul class="navigation">
                             <li class="navigation__link">
-                                <a href="#"> About the shelter</a>
+                                <a href="/index.html"> About the shelter</a>
                             </li>
                             <li class="navigation__link">
-                                <a href="#">Our pets</a>
+                                <a href="/pages/our-pets/our-pets.html"
+                                    >Our pets</a
+                                >
                             </li>
                             <li class="navigation__link">
                                 <a href="#">Help the shelter</a>
@@ -54,6 +56,7 @@
                     <img
                         src="./assets/images/start-screen-puppy.png"
                         class="not-only__img"
+                        alt="puppy"
                     />
                 </div>
             </section>
@@ -64,6 +67,7 @@
                     <img
                         src="./assets/images/about-pets.jpg"
                         class="about__img"
+                        alt="cat&dog"
                     />
                     <div class="about__content">
                         <h3 class="about__title">
@@ -92,16 +96,54 @@
             <section class="our-friends">
                 <div class="wrapper our-friends__wrapper">
                     <h3 class="our-friends__title">
-                        Our friends who are looking for a house
+                        Our friends who <br />
+                        are looking for a house
                     </h3>
-                    <div class="our-friends__cards">
-                        <div>
-                            <img src="./assets/images/pets-katrine.jpg" />
+                    <div class="slider">
+                        <div class="arrow__button left-arrow">
+                            <img
+                                src="/assets/icons/Arrow-left.svg"
+                                alt="arrow-left"
+                            />
                         </div>
-                        <div>
-                            <img src="./assets/images/pets-jennifer.png" />
+                        <div class="our-friends__cards">
+                            <div class="card">
+                                <img
+                                    src="./assets/images/pets-katrine.jpg"
+                                    alt="cat"
+                                />
+                                <h4>Katrine</h4>
+                                <div class="cards__button">
+                                    <button class="button">Learn more</button>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img
+                                    src="./assets/images/pets-jennifer.png"
+                                    alt="dog"
+                                />
+                                <h4>Jennifer</h4>
+                                <div class="cards__button">
+                                    <button class="button">Learn more</button>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img
+                                    src="./assets/images/pets-woody.png"
+                                    alt="dog"
+                                />
+                                <h4>Woody</h4>
+                                <div class="cards__button">
+                                    <button class="button">Learn more</button>
+                                </div>
+                            </div>
                         </div>
-                        <div><img src="./assets/images/pets-woody.png" /></div>
+                        <div class="arrow__button right-arrow">
+                            <img
+                                src="/assets/icons/Arrow-right.svg"
+                                alt="arrow-right"
+                            />
+                        </div>
                     </div>
                     <div class="our-friends__button">
                         <button class="button">Get to know the rest</button>
@@ -109,19 +151,103 @@
                 </div>
             </section>
             <section class="help">
-                <div class="wrapper">
-                    <h3>How you can help our shelter</h3>
-                    <div></div>
+                <div class="wrapper help__wrapper">
+                    <h3 class="help__title">
+                        How you can help
+                        <br />
+                        our shelter
+                    </h3>
+                    <div class="help__list">
+                        <div class="list__item">
+                            <img
+                                src="/assets/icons/Pet food.svg"
+                                class="list__img"
+                            />
+                            <h4>Pet food</h4>
+                        </div>
+                        <div class="list__item">
+                            <img
+                                src="/assets/icons/transportation.svg"
+                                class="list__img"
+                            />
+                            <h4>Transportation</h4>
+                        </div>
+                        <div class="list__item">
+                            <img
+                                src="/assets/icons/toys.svg"
+                                class="list__img"
+                            />
+                            <h4>Toys</h4>
+                        </div>
+                        <div class="list__item">
+                            <img
+                                src="/assets/icons/bowls-and-cups.svg"
+                                class="list__img"
+                            />
+                            <h4>Bowls and cups</h4>
+                        </div>
+                        <div class="list__item">
+                            <img
+                                src="/assets/icons/shampoos.svg"
+                                class="list__img"
+                            />
+                            <h4>Shampoos</h4>
+                        </div>
+                        <div class="list__item">
+                            <img
+                                src="/assets/icons/vitamins.svg"
+                                class="list__img"
+                            />
+                            <h4>Vitamins</h4>
+                        </div>
+                        <div class="list__item">
+                            <img
+                                src="/assets/icons/medicines.svg"
+                                class="list__img"
+                            />
+                            <h4>Medicines</h4>
+                        </div>
+                        <div class="list__item">
+                            <img
+                                src="/assets/icons/collars-or-leashes.svg"
+                                class="list__img"
+                            />
+                            <h4>Collars / leashes</h4>
+                        </div>
+                        <div class="list__item">
+                            <img
+                                src="/assets/icons/sleeping-area.svg"
+                                class="list__img"
+                            />
+                            <h4>Sleeping areas</h4>
+                        </div>
+                    </div>
                 </div>
             </section>
             <section class="in-addition">
-                <div class="wrapper">
-                    <img src="./assets/images/donation-dog.png" />
+                <div class="wrapper in-addition__wrapper">
+                    <img
+                        src="./assets/images/donation-dog.png"
+                        alt="dog"
+                        class="in-addition__img"
+                    />
+
                     <div class="in-addition__content">
-                        <h3>You can also make a donation</h3>
-                        <p>Name of the bank / Type of bank account</p>
-                        <form></form>
-                        <p>
+                        <h3 class="in-addition__title">
+                            You can also make a donation
+                        </h3>
+                        <h5>Name of the bank / Type of bank account</h5>
+                        <div class="in-addition__button">
+                            <button class="button credit-card__button">
+                                <img
+                                    src="/assets/icons/credit-card.svg"
+                                    alt="card"
+                                    class="card__ico"
+                                />
+                                <p>8380 2880 8028 8791 7435</p>
+                            </button>
+                        </div>
+                        <p class="in-addition__text">
                             Legal information and lorem ipsum dolor sit amet,
                             consectetur adipiscing elit. Maecenas a ipsum at
                             libero sagittis dignissim sed ac diam. Praesent
@@ -132,28 +258,54 @@
                 </div>
             </section>
         </main>
-        <footer>
-            <div class="wrapper">
-                <div>
-                    <h3>For questions and suggestions</h3>
-                    <p>
-                        <span class="ico ico_letter"></span
-                        ><a href="mailto:email@shelter.com"
-                            >email@shelter.com</a
-                        >
-                    </p>
-                    <p>
-                        <span class="ico ico_phone"></span
-                        ><a href="tel:+136745677554">+13 674 567 75 54</a>
-                    </p>
+        <footer class="footer">
+            <div class="wrapper footer__wrapper">
+                <div class="footer__content">
+                    <div class="footer__contacts">
+                        <h3 class="contacts__title">
+                            For questions and suggestions
+                        </h3>
+                        <div class="footer__email">
+                            <span class="ico ico_letter"></span
+                            ><a
+                                href="mailto:email@shelter.com"
+                                class="footer__link"
+                                >email@shelter.com</a
+                            >
+                        </div>
+                        <div class="footer__phone">
+                            <span class="ico ico_phone"></span
+                            ><a href="tel:+136745677554" class="footer__link"
+                                >+13 674 567 75 54</a
+                            >
+                        </div>
+                    </div>
+                    <div class="footer__locations">
+                        <h3 class="locations__title">
+                            We are waiting for your visit
+                        </h3>
+                        <div class="boston__location">
+                            <img src="/assets/icons/pin.svg" alt="pin" />
+                            <a
+                                href="https://goo.gl/maps/UWdACDM4A58ZtRA7A"
+                                class="footer__link"
+                            >
+                                1 Central Street, Boston (entrance from the
+                                store)
+                            </a>
+                        </div>
+                        <div class="london__location">
+                            <img src="/assets/icons/pin.svg" alt="pin" />
+                            <a
+                                href="https://goo.gl/maps/i7DonmNB46brFw8x9"
+                                class="footer__link"
+                                >18 South Park, London</a
+                            >
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <h3>We are waiting for your visit</h3>
-                    <p>1 Central Street, Boston (entrance from the store)</p>
-                    <p>18 South Park, London</p>
-                </div>
+                <img src="./assets/images/footer-puppy.png" alt="dog" />
             </div>
-            <img src="./assets/images/footer-puppy.png" />
         </footer>
     </body>
 </html>
