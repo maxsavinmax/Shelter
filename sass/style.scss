@@ -1,45 +1,26 @@
-@import "base/base";
 @import "abstract/constans";
+@import "abstract/placeholders";
+@import "abstract/mixins";
 
-@font-face {
-    font-family: "georgia";
-    src: url("./fonts/georgia bold.eot");
-    src: local("вє"), url("fonts/georgia bold.woff") format("woff"),
-        url("fonts/georgia bold.ttf") format("truetype"),
-        url("fonts/georgia bold.svg") format("svg");
-    font-weight: bold;
-    font-style: normal;
-}
+//Base
+@import "base/base";
+@import "base/buttons";
+@import "base/logo";
+@import "base/hamburger";
 
-@font-face {
-    font-family: "georgia";
-    src: url("./fonts/georgia italic.eot");
-    src: local("вє"), url("fonts/georgia italic.woff") format("woff"),
-        url("fonts/georgia italic.ttf") format("truetype"),
-        url("fonts/georgia italic.svg") format("svg");
-    font-weight: normal;
-    font-style: italic;
-}
-@font-face {
-    font-family: "Georgia";
-    src: url("./fonts/Georgia Regular font.eot");
-    src: local("вє"), url("fonts/Georgia Regular font.woff") format("woff"),
-        url("fonts/Georgia Regular font.ttf") format("truetype"),
-        url("fonts/Georgia Regular font.svg") format("svg");
-    font-weight: normal;
-    font-style: normal;
-}
+//layouts
+@import "layouts/wrapper";
+@import "layouts/header";
+@import "layouts/top-wrapper";
+@import "layouts/footer";
 
-.ico_letter {
-    background-image: url("../assets/icons/mail.svg");
-    width: 40px;
-    height: 26px;
-    display: inline-block;
-}
+// Components
+@import "components/not-only";
+@import "components/in-addition";
+@import "components/our-friends";
+@import "components/about";
+@import "components/help";
+@import "components/navigation";
 
-.ico_phone {
-    background-image: url("../assets/icons/phone.svg");
-    width: 40px;
-    height: 32px;
-    display: inline-block;
-}
+// Pages
+@import "pages/our-pets";

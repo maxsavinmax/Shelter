@@ -1,8 +1,112 @@
+@font-face {
+    font-family: "georgia";
+    src: url("./fonts/georgia bold.eot");
+    src: local("вє"), url("fonts/georgia bold.woff") format("woff"),
+        url("fonts/georgia bold.ttf") format("truetype"),
+        url("fonts/georgia bold.svg") format("svg");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "georgia";
+    src: url("./fonts/georgia italic.eot");
+    src: local("вє"), url("fonts/georgia italic.woff") format("woff"),
+        url("fonts/georgia italic.ttf") format("truetype"),
+        url("fonts/georgia italic.svg") format("svg");
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: "Georgia";
+    src: url("./fonts/Georgia Regular font.eot");
+    src: local("вє"), url("fonts/Georgia Regular font.woff") format("woff"),
+        url("fonts/Georgia Regular font.ttf") format("truetype"),
+        url("fonts/Georgia Regular font.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
 html {
     font-size: 10px;
+    overflow-x: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
+    max-width: 1280px;
+    margin: 0 auto;
     font-size: 1.5rem;
     font-family: Georgia;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-family: "Georgia";
+    @include font(3.2rem, 35px, 400, normal);
+    letter-spacing: 0.06em;
+}
+
+h2 {
+    font-family: Georgia;
+    @include font(4.4rem, 57px, 400, normal);
+    color: $color-light;
+
+    @include media-mobile {
+        @include font(
+            $size: 2.5rem,
+            $height: 32px,
+            $weight: 400,
+            $style: normal
+        );
+        letter-spacing: 0.06em;
+    }
+}
+
+h3 {
+    @include font(3.5rem, 45px, 400, normal);
+    letter-spacing: 0.06em;
+    color: $color-title;
+
+    @include media-mobile {
+        @include font(
+            $size: 2.5rem,
+            $height: 32px,
+            $weight: 400,
+            $style: normal
+        );
+    }
+}
+
+h4 {
+    @include font(2rem, 23px, 400, normal);
+    letter-spacing: 0.06em;
+    color: $color-title;
+
+    @include media-mobile {
+        @include font(
+            $size: 1.5rem,
+            $height: 17px,
+            $weight: 400,
+            $style: normal
+        );
+    }
+}
+
+h5 {
+    font-family: "Georgia";
+    @include font(1.5rem, 17px, 400, normal);
+    letter-spacing: 0.06em;
+    color: $color-title;
+
+    @include media-mobile {
+        line-height: 24px;
+        letter-spacing: 0;
+    }
 }
