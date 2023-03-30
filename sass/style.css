@@ -1188,6 +1188,14 @@ li::marker {
 
 .header-pets {
   padding: 30px 0;
+  position: fixed;
+  width: 100%;
+  background: white;
+  z-index: 3;
+}
+
+.our-friends-pets {
+  padding-top: 120px;
 }
 
 .our-pets__wrapper {
