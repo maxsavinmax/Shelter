@@ -1178,6 +1178,7 @@ li::marker {
   gap: 175px;
   transform: translateX(0%);
   transition: all 2s;
+  overflow: scroll;
 }
 
 .burger-nav-header {
