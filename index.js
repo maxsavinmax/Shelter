@@ -86,6 +86,7 @@ const menuBurger = document.querySelector(".header__navigation");
 const burger = document.querySelector(".header__logo-line");
 const navLink = document.querySelectorAll(".navigation__link");
 const html = document.querySelector("html");
+const header = document.querySelector(".header-pets");
 
 function createBurger() {
     burger.addEventListener("click", () => {
@@ -93,6 +94,7 @@ function createBurger() {
         blackOut.classList.toggle("blackout-active");
         burger.classList.toggle("header__logo-line-active");
         html.classList.toggle("html-active");
+        header.setAttribute("style", " position: static;");
 
         const burgerNavHeader = document.querySelector(".burger-nav-header");
 
@@ -141,6 +143,7 @@ navLink.forEach((el) => {
         blackOut.classList.remove("blackout-active");
         burger.classList.remove("header__logo-line-active");
         html.classList.remove("html-active");
+        header.removeAttribute("style", " position: static;");
         document.querySelector(".burger-nav-header").remove();
     });
 });
@@ -153,6 +156,7 @@ function closeBurger() {
             blackOut.classList.remove("blackout-active");
             burger.classList.remove("header__logo-line-active");
             html.classList.remove("html-active");
+            header.removeAttribute("style", " position: static;");
             document.querySelector(".burger-nav-header").remove();
         }
     });
