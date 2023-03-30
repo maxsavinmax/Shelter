@@ -94,12 +94,12 @@ function createBurger() {
         blackOut.classList.toggle("blackout-active");
         burger.classList.toggle("header__logo-line-active");
         html.classList.toggle("html-active");
-        header.setAttribute("style", " position: static;");
 
         const burgerNavHeader = document.querySelector(".burger-nav-header");
 
         if (!menuBurger.contains(burgerNavHeader)) {
             if (menuBurger.closest(".pets-wrapper")) {
+                header.setAttribute("style", " position: static;");
                 menuBurger.insertAdjacentHTML(
                     "afterbegin",
                     `
