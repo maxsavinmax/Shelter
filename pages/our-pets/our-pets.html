@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="../../sass/style.css" />
         <title>Our-pets</title>
     </head>
-    <body>
+    <body onload="shuffle()">
         <div class="wrap">
             <div class="blackout"></div>
             <header class="header header-pets">
@@ -67,132 +67,42 @@
                         Our friends who <br />
                         are looking for a house
                     </h3>
-                    <div class="slider our-pets__slider">
-                        <div class="our-friends__cards our-pets__cards">
-                            <div class="card">
-                                <img
-                                    src="../../assets/our-pets-images/pets-katrine.jpg"
-                                    alt="cat"
-                                />
-                                <h4 class="card__title">Katrine</h4>
-                                <div class="our-friends__button">
-                                    <button class="button cards__button">
-                                        Learn more
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <img
-                                    src="../../assets/our-pets-images/pets-jennifer.png"
-                                    alt="dog"
-                                />
-                                <h4 class="card__title">Jennifer</h4>
-                                <div class="our-friends__button">
-                                    <button class="button cards__button">
-                                        Learn more
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <img
-                                    src="../../assets/our-pets-images/pets-woody.png"
-                                    alt="dog"
-                                />
-                                <h4 class="card__title">Woody</h4>
-                                <div class="our-friends__button">
-                                    <button class="button cards__button">
-                                        Learn more
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <img
-                                    src="../../assets/our-pets-images/pets-sophia.jpg"
-                                    alt="dog"
-                                />
-                                <h4 class="card__title">Sophia</h4>
-                                <div class="our-friends__button">
-                                    <button class="button cards__button">
-                                        Learn more
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <img
-                                    src="../../assets/our-pets-images/pets-timmy.jpg"
-                                    alt="dog"
-                                />
-                                <h4 class="card__title">Timmy</h4>
-                                <div class="our-friends__button">
-                                    <button class="button cards__button">
-                                        Learn more
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <img
-                                    src="../../assets/our-pets-images/pets-charly.jpg"
-                                    alt="dog"
-                                />
-                                <h4 class="card__title">Charly</h4>
-                                <div class="our-friends__button">
-                                    <button class="button cards__button">
-                                        Learn more
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <img
-                                    src="../../assets/our-pets-images/pets-scarlet.jpg"
-                                    alt="dog"
-                                />
-                                <h4 class="card__title">Scarlett</h4>
-                                <div class="our-friends__button">
-                                    <button class="button cards__button">
-                                        Learn more
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <img
-                                    src="../../assets/our-pets-images/pets-freddie.jpg"
-                                    alt="dog"
-                                />
-                                <h4 class="card__title">Freddie</h4>
-                                <div class="our-friends__button">
-                                    <button class="button cards__button">
-                                        Learn more
-                                    </button>
-                                </div>
-                            </div>
+                    <div class="pagination-wrapper">
+                        <div class="slider our-pets__slider">
+                            <div
+                                class="our-friends__cards our-pets__cards"
+                                id="1"
+                            ></div>
+                            <div
+                                class="our-friends__cards our-pets__cards"
+                                id="2"
+                            ></div>
+                            <div
+                                class="our-friends__cards our-pets__cards"
+                                id="3"
+                            ></div>
+                            <div
+                                class="our-friends__cards our-pets__cards"
+                                id="4"
+                            ></div>
+                            <div
+                                class="our-friends__cards our-pets__cards"
+                                id="5"
+                            ></div>
+                            <div
+                                class="our-friends__cards our-pets__cards"
+                                id="6"
+                            ></div>
                         </div>
                     </div>
                     <div class="our-pets__navigation">
-                        <div class="arrow__button">
-                            <img
-                                src="../../assets/pets-icons/ico__arrows-left.svg"
-                                alt="arrows"
-                            />
+                        <div class="arrow__button button-first disabled">
+                            &lt&lt
                         </div>
-                        <div class="arrow__button">
-                            <img
-                                src="../../assets/pets-icons/ico__arrow-left.svg"
-                                alt="arrow"
-                            />
-                        </div>
-                        <div class="arrow__button"></div>
-                        <div class="arrow__button">
-                            <img
-                                src="../../assets/pets-icons/ico__arrow-right.svg"
-                                alt="arrow"
-                            />
-                        </div>
-                        <div class="arrow__button">
-                            <img
-                                src="../../assets/pets-icons/ico__arrows-right.svg"
-                                alt="arrows"
-                            />
-                        </div>
+                        <div class="arrow__button prev disabled">&lt</div>
+                        <div class="arrow__button current">1</div>
+                        <div class="arrow__button next">></div>
+                        <div class="arrow__button button-last">>></div>
                     </div>
                 </div>
             </section>

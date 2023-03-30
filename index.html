@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="sass/style.css" />
         <title>Shelter</title>
     </head>
-    <body class="overflow">
+    <body class="overflow" onload="shuffle()">
         <div class="wrap">
             <div class="blackout"></div>
             <div class="top-wrapper">
@@ -27,7 +27,7 @@
                             </span>
                         </div>
                         <nav class="header__navigation">
-                            <ul class="navigation">
+                            <ul class="navigation" onclick="closeBurger()">
                                 <li class="navigation__link about-nav">
                                     <a
                                         href="/index.html"
@@ -44,15 +44,23 @@
                                         >Our pets</a
                                     >
                                 </li>
-                                <li class="navigation__link">
+                                <li
+                                    class="navigation__link"
+                                    onclick="closeBurger()"
+                                >
                                     <a
+                                        onclick="closeBurger()"
                                         href="/index.html#help"
                                         class="link-burger"
                                         >Help the shelter</a
                                     >
                                 </li>
-                                <li class="navigation__link">
+                                <li
+                                    class="navigation__link"
+                                    onclick="closeBurger()"
+                                >
                                     <a
+                                        onclick="closeBurger()"
                                         href="/index.html#contacts"
                                         class="link-burger"
                                         >Contacts</a
@@ -75,7 +83,11 @@
                                 the world, you will see!
                             </p>
                             <div class="not-only__button">
-                                <button class="button">Make a friend</button>
+                                <a href="/pages/our-pets/our-pets.html">
+                                    <button class="button">
+                                        Make a friend
+                                    </button>
+                                </a>
                             </div>
                         </div>
                         <img
@@ -131,44 +143,7 @@
                                     alt="arrow-left"
                                 />
                             </div>
-                            <div class="our-friends__cards">
-                                <div class="card">
-                                    <img
-                                        src="./assets/images/pets-katrine.jpg"
-                                        alt="cat"
-                                    />
-                                    <h4 class="card__title">Katrine</h4>
-                                    <div class="our-friends__button">
-                                        <button class="button cards__button">
-                                            Learn more
-                                        </button>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <img
-                                        src="./assets/images/pets-jennifer.png"
-                                        alt="dog"
-                                    />
-                                    <h4 class="card__title">Jennifer</h4>
-                                    <div class="our-friends__button">
-                                        <button class="button cards__button">
-                                            Learn more
-                                        </button>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <img
-                                        src="./assets/images/pets-woody.png"
-                                        alt="dog"
-                                    />
-                                    <h4 class="card__title">Woody</h4>
-                                    <div class="our-friends__button">
-                                        <button class="button cards__button">
-                                            Learn more
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
+                            <div class="our-friends__cards"></div>
                             <div class="arrow__button right-arrow">
                                 <img
                                     src="/assets/icons/Arrow-right.svg"
@@ -177,7 +152,11 @@
                             </div>
                         </div>
                         <div class="our-friends__button">
-                            <button class="button">Get to know the rest</button>
+                            <a href="/pages/our-pets/our-pets.html">
+                                <button class="button">
+                                    Get to know the rest
+                                </button>
+                            </a>
                         </div>
                     </div>
                 </section>
@@ -345,7 +324,8 @@
                     />
                 </div>
             </footer>
-            <script src="/index.js"></script>
+
+            <script src="index.js"></script>
         </div>
     </body>
 </html>
