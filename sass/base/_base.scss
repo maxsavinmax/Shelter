@@ -54,7 +54,6 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    // max-width: 1280px;
     margin: 0 auto;
     font-size: 1.5rem;
     font-family: Georgia;
@@ -63,17 +62,8 @@ body {
 }
 
 .wrap {
-    // width: 100vw;
-    // height: 100vh;
-    // overflow: auto;
     scroll-behavior: smooth;
-    // overflow-y: hidden;
 }
-
-// .wrap-active {
-//     // width: 200vw;
-//     height: 100vh;
-// }
 
 .overflow {
     overflow-y: hidden;
